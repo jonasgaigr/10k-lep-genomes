@@ -1,0 +1,10 @@
+/*-- scss:rules --*/
+
+// The theme caps a picture to the safe-area height as well as to the column
+// width, so a PORTRAIT figure ends up narrower than its column and would sit
+// flush left with the gap on its right. Centre it in the column instead;
+// landscape pictures already fill the width, so this is a no-op for them.
+.reveal .slides section .aopk-cols img {
+  margin-left: auto;
+  margin-right: auto;
+}
