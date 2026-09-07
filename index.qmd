@@ -47,19 +47,39 @@ One-off studies today; a strategic mandate for a standing system.
 
 What genetic data have already told us, and what they changed.
 
-## Case: Euphydryas maturna
+## Case: Euphydryas maturna {.smaller}
 
-- The **scarce fritillary**: a microsatellite study (2023) combining **historical and recent samples**, giving a retrospective view of change.
-- **Trend:** genetic variability of the Dománovice / Elbe-lowland population has **declined**, and the population is markedly distinct from those in neighbouring countries.
-- **Origin:** the population near Frýdek-Místek is **not autochthonous** – the genetic data point to an origin in southern Slovakia.
-- This is decision-grade evidence: the result feeds directly into choices about further **genetic management**.
+::: {.aopk-cols}
+::: {}
+- The **scarce fritillary**: a microsatellite study (2023) combining **historical and recent samples**.
+- **Trend:** variability in the Dománovice / Elbe-lowland population has **declined**, and the population is markedly distinct from those in neighbouring countries.
+- **Origin:** the population near Frýdek-Místek is **not autochthonous** – the data point to southern Slovakia.
+- Decision-grade evidence: the result feeds directly into **genetic management** choices.
+:::
 
-## Natura 2000 Butterflies {.smaller}
+::: {}
+![](images/maturna.png)
+:::
+:::
+
+## Natura 2000 Butterflies
 
 - Assessment of genetic conditions in **current and historical populations** of butterflies of European importance, with a proposal for future genetic management of those populations.
 - **Microsatellites (SSR)** for seven species – *Lycaena helle*, *Coenonympha hero*, *Colias myrmidone*, *Parnassius mnemosyne*, *Phengaris arion*, *P. nausithous* and *P. teleius* – with present-day parameters compared against the same populations in the past.
+
+## From Markers to Genomes {.smaller}
+
+::: {.aopk-cols}
+::: {}
 - **RADseq** to assess the standing and condition of current populations of *Eriogaster catax* and *Euplagia quadripunctaria*.
-- **Ongoing, 2024–2026:** *Genomics for insect conservation in the CR: butterflies as a model group*, a TA ČR project with the NCA as application guarantor – the step from single-species studies to testing genomic approaches across practical invertebrate conservation.
+- **Ongoing, 2024–2026:** *Genomics for insect conservation in the CR: butterflies as a model group*, a TA ČR project with the NCA as application guarantor.
+- The step from single-species studies to testing genomic approaches across practical invertebrate conservation.
+:::
+
+::: {}
+![](images/catax.png)
+:::
+:::
 
 ## Precedents from Abroad {.smaller}
 
