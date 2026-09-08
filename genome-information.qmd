@@ -7,7 +7,7 @@ date-format: "DDDD MMMM YYYY"
 lang: en
 title-footer: "Nature Conservation Agency of the Czech Republic&ensp;|&ensp;aopk.gov.cz"
 footer-left: "Access to and Use of Insect Genome Information | 8 September 2026"
-footer-right: "AOPK ČR | aopk.gov.cz"
+footer-right: "NCA CZ | aopk.gov.cz"
 format:
   aopk-revealjs:
     theme:
