@@ -27,7 +27,7 @@ A commissioner of isolated studies, not yet a cumulative capability.
 - The result is isolated reports: samples not archived comparably, data not deposited under common identifiers, nothing repeatable.
 - Other European agencies have named this trap and escaped it.
 
-## Three Strands, Three Different Problems {.smaller}
+## Three Strands, Three Different Problems
 
 - **Reference genomes** (ERGA, BGE+) – built by others at European scale. We contribute samples and name priority species. *Cost to us: very low.*
 - **Barcode reference libraries** (iBOL / BOLD; the German GBOL model) – partial for Central-European insects, with large gaps in dark taxa. *Low to medium.*
@@ -90,7 +90,7 @@ We contribute samples and coordination – not laboratories.
 :::
 :::
 
-## Two Tracks, One Field Season {.smaller}
+## Two Tracks, One Field Season
 
 ::: {.aopk-cols}
 ::: {}
@@ -106,13 +106,13 @@ We contribute samples and coordination – not laboratories.
 
 ## What We Must Actually Produce
 
-- **Eight short SOPs**, drafted once in 2026 and reused indefinitely: sampling design and site register, non-lethal tissue sampling, preservation, labelling and metadata, cold chain, permits and ABS, chain of custody, field QC.
+- **Sample Collection and Management Protocols**, drafted once in 2026 and reused indefinitely: sampling design and site register, non-lethal tissue sampling, preservation, labelling and metadata, cold chain, permits and ABS, chain of custody, field QC.
 - **An identifier spine**: sample IDs minted centrally and pre-printed before the season – one tube = one Species Occurrence Database record = one `materialSampleID`.
 - **Adopt the ERGA sample manifest** as our field-form schema rather than designing one.
-- Training for 30–40 field experts, with an autumn 2026 dry run to break the protocol before it matters.
-- Roughly **2,500–3,000 labelled samples** – the number to put in front of any prospective analysis partner.
+- Training for 30–40 field experts.
+- Roughly **500–1,200 labelled samples** – the number to put in front of any prospective analysis partner.
 
-## Three-Tier Proposal {.smaller}
+## Three-Tier Proposal
 
 - **Tier 0 – Bank only.** No external funding: full sampling, full metadata, archive only. $N_e$ 500 and PM still reported from census data.
 - **Tier 1 – Barcode.** A small in-kind or BGE+ slot: barcoding of a subset, BINs returned to Species Occurrence Database, the identifier plumbing tested end to end.
@@ -120,10 +120,10 @@ We contribute samples and coordination – not laboratories.
 - The framing to accept explicitly: **Tier 0 is still a success.**
 
 ## From samples to EBVs {.aopk-section}
-
+  
 The pilot only matters if it compiles into something reportable.
 
-## Compiling the Genetic Composition EBVs {.smaller}
+## Compiling the Genetic Composition EBVs
 
 - The EBOCC roadmap defines 84 Essential Biodiversity Variables, among them the **genetic composition** class – the layer between raw sequences and a policy answer.
 - Four variables the pilot feeds, ordered by what it can honestly support:
@@ -137,14 +137,14 @@ The pilot only matters if it compiles into something reportable.
 
 One simple dashboard, built on pointers rather than a repository.
 
-## A Simple Dashboard, Not a Data Centre {.smaller}
+## A Simple Dashboard
 
-- The failure mode is not a bad pilot; it is a good pilot whose results arrive as a PDF nobody is obliged to act on. A dashboard is the cheapest fix.
+- The failure mode is not a bad pilot; it is a good pilot whose results arrive as a PDF nobody is obliged to act on.
 - **What it holds:** the site register with fixed coordinates and resampling intervals; sample counts by species, track and stratum; the identifier chain – sample ID → BOLD BIN → ENA accession – as outbound links; the four EBVs with their time points; permit and ABS status per batch.
 - **What it does not hold:** sequences. Those stay in ENA and BOLD, where they belong.
 - **Sensitivity:** full precision retained internally, deliberately generalised coordinates in anything published, and the generalisation documented so it reads as intentional rather than sloppy.
 
-## Who the Dashboard Is For
+## Dashboard Users
 
 - **Field experts** see what their season produced, and what is still missing from their stratum.
 - **Action-plan coordinators** see, per population, whether a pre-agreed decision rule has been triggered.
