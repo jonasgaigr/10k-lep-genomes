@@ -1,9 +1,9 @@
 ---
 title: "Genetic Monitoring in Czech Insect Conservation"
 author: "Jonas Gaigr"
-institute: "Nature Conservation Agency of the Czech Republic<br>Current status and potential applications within the NCA CR"
+institute: "Nature Conservation Agency of the Czech Republic<br>Department of Biodiversity Monitoring"
 date: 2026-09-08
-date-format: "D MMMM YYYY"
+date-format: "DDDD MMMM YYYY"
 lang: en
 title-footer: "Nature Conservation Agency of the Czech Republic&ensp;|&ensp;aopk.gov.cz"
 footer-left: "Genetic Monitoring in Czech Insect Conservation | 8 September 2026"
@@ -152,10 +152,6 @@ The capacity already exists – and a minimum scheme to put it to work.
 - **Sample through the network that already exists** – the field monitoring infrastructure is the cheapest route to standardised material.
 - **Pair depth with breadth:** genomic monitoring of a few species, proxy screening of many.
 - **Decide the response before the data arrive** – indicators, intervals and consequences, agreed in advance.
-
-## Thank you {.aopk-section}
-
-Questions and comments are welcome.
 
 ## {.aopk-closing}
 
