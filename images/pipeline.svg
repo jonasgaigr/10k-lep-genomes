@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1129.22" height="459.86" viewBox="0 0 1129.22 459.86" role="img" aria-labelledby="figtitle figdesc">
+<title id="figtitle">From sample to indicator: who is responsible for each step</title>
+<desc id="figdesc">Four responsibility bands. The Nature Conservation Agency samples in the field, holds the samples in short-term storage, and mints the occurrence record that carries the sample identifier. Material then splits: tissue goes to research partners for laboratory work and bioinformatics, which produce the study report and return ENA and BOLD accessions to the occurrence record; the voucher and surplus material go to museums for long-term storage in the vault. The Agency and its research partners jointly compile the Essential Biodiversity Variables and dashboards from the analytical results and from the occurrence records.</desc>
+<style>
+/* Copied from _extensions/aopk/aopk.scss: a standalone SVG cannot see the
+   deck's stylesheet, so it has to alias Windows' four separate Franklin
+   Gothic families itself. local() only — nothing is fetched. */
+@font-face{font-family:"AOPK Franklin Gothic";font-weight:400;font-style:normal;src:local("Franklin Gothic Book"),local("FranklinGothic-Book"),local("ITC Franklin Gothic Std Book");}
+@font-face{font-family:"AOPK Franklin Gothic";font-weight:500;font-style:normal;src:local("Franklin Gothic Medium"),local("FranklinGothic-Medium"),local("ITC Franklin Gothic Std Medium");}
+@font-face{font-family:"AOPK Franklin Gothic";font-weight:600;font-style:normal;src:local("Franklin Gothic Demi"),local("FranklinGothic-Demi"),local("ITC Franklin Gothic Std Demi");}
+@font-face{font-family:"AOPK Franklin Gothic";font-weight:800;font-style:normal;src:local("Franklin Gothic Heavy"),local("FranklinGothic-Heavy"),local("ITC Franklin Gothic Std Heavy");}
+text{font-family:"AOPK Franklin Gothic","Franklin Gothic Book",Arial,"Helvetica Neue",Helvetica,sans-serif;}
+.lane{font-weight:600;letter-spacing:0.4px;text-transform:uppercase;fill:#006B4D;}
+.bt{font-weight:600;}
+.bd{font-weight:400;}
+.an{font-weight:400;fill:#4A4A4A;paint-order:stroke;stroke:#ffffff;stroke-width:3.5px;stroke-linejoin:round;}
+</style>
+<defs>
+<marker id="h-006B4D" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.5 L0,7 z" fill="#006B4D"/></marker>
+<marker id="h-F68B1F" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.5 L0,7 z" fill="#F68B1F"/></marker>
+</defs>
+<rect width="1129.22" height="459.86" fill="#ffffff"/>
+<rect x="0" y="0" width="1129.22" height="114.96" fill="#006B4D" fill-opacity="0.06"/>
+<rect x="0" y="42.48" width="5" height="30" fill="#006B4D"/>
+<text class="lane" x="18" y="62.52" font-size="14"><tspan>NCA</tspan></text>
+<rect x="0" y="114.96" width="1129.22" height="114.96" fill="#8CC83C" fill-opacity="0.06"/>
+<line x1="0" y1="114.96" x2="1129.22" y2="114.96" stroke="#E2E2E2" stroke-width="1"/>
+<rect x="0" y="157.45" width="5" height="30" fill="#8CC83C"/>
+<text class="lane" x="18" y="160.69" font-size="14"><tspan>NCA +</tspan></text>
+<text class="lane" x="18" y="177.49" font-size="14"><tspan>research</tspan></text>
+<text class="lane" x="18" y="194.29" font-size="14"><tspan>partners</tspan></text>
+<rect x="0" y="229.93" width="1129.22" height="114.96" fill="#F68B1F" fill-opacity="0.06"/>
+<line x1="0" y1="229.93" x2="1129.22" y2="229.93" stroke="#E2E2E2" stroke-width="1"/>
+<rect x="0" y="272.41" width="5" height="30" fill="#F68B1F"/>
+<text class="lane" x="18" y="284.05" font-size="14"><tspan>Research</tspan></text>
+<text class="lane" x="18" y="300.85" font-size="14"><tspan>partners</tspan></text>
+<rect x="0" y="344.89" width="1129.22" height="114.96" fill="#B1B1B1" fill-opacity="0.06"/>
+<line x1="0" y1="344.89" x2="1129.22" y2="344.89" stroke="#E2E2E2" stroke-width="1"/>
+<rect x="0" y="387.38" width="5" height="30" fill="#B1B1B1"/>
+<text class="lane" x="18" y="407.42" font-size="14"><tspan>Museums</tspan></text>
+<line x1="145" y1="0" x2="145" y2="459.86" stroke="#E2E2E2" stroke-width="1"/>
+<rect x="162" y="15.48" width="166.24" height="84" rx="4" fill="#006B4D"/>
+<text class="bt" x="176" y="41" font-size="16" fill="#ffffff"><tspan>Sampling</tspan></text>
+<text class="bd" x="176" y="66.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>2027 field season,</tspan></text>
+<text class="bd" x="176" y="80.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>one protocol, one register</tspan></text>
+<rect x="362.24" y="15.48" width="166.24" height="84" rx="4" fill="#006B4D"/>
+<text class="bt" x="376.24" y="32" font-size="16" fill="#ffffff"><tspan>Short-term</tspan></text>
+<text class="bt" x="376.24" y="50" font-size="16" fill="#ffffff"><tspan>storage</tspan></text>
+<text class="bd" x="376.24" y="75.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>ethanol or freezer,</tspan></text>
+<text class="bd" x="376.24" y="89.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>chain of custody</tspan></text>
+<rect x="562.49" y="15.48" width="366.49" height="84" rx="4" fill="#006B4D"/>
+<text class="bt" x="576.49" y="41" font-size="16" fill="#ffffff"><tspan>Species Occurrence Database</tspan></text>
+<text class="bd" x="576.49" y="66.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>materialSampleID · event date · coordinates · permit,</tspan></text>
+<text class="bd" x="576.49" y="80.12" font-size="12" fill="#ffffff" fill-opacity="0.85"><tspan>then the ENA and BOLD accessions the analysis returns</tspan></text>
+<rect x="962.97" y="130.45" width="166.24" height="84" rx="4" fill="#8CC83C"/>
+<text class="bt" x="976.97" y="146.97" font-size="16" fill="#000000"><tspan>EBVs &amp;</tspan></text>
+<text class="bt" x="976.97" y="164.97" font-size="16" fill="#000000"><tspan>dashboards</tspan></text>
+<text class="bd" x="976.97" y="190.09" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>ΔH, ΔF</tspan><tspan font-size="8.64" dy="2.4">ST</tspan><tspan dy="-2.4">, </tspan><tspan font-style="italic">N</tspan><tspan font-size="8.64" dy="2.4">e</tspan><tspan dy="-2.4">,</tspan></text>
+<text class="bd" x="976.97" y="204.09" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>Populations Maintained</tspan></text>
+<rect x="562.49" y="245.41" width="166.24" height="84" rx="4" fill="#F68B1F"/>
+<text class="bt" x="576.49" y="270.93" font-size="16" fill="#000000"><tspan>Laboratory</tspan></text>
+<text class="bd" x="576.49" y="296.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>extraction, barcoding,</tspan></text>
+<text class="bd" x="576.49" y="310.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>sequencing</tspan></text>
+<rect x="762.73" y="245.41" width="166.24" height="84" rx="4" fill="#F68B1F"/>
+<text class="bt" x="776.73" y="270.93" font-size="16" fill="#000000"><tspan>Bioinformatics</tspan></text>
+<text class="bd" x="776.73" y="296.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>assembly, genotyping,</tspan></text>
+<text class="bd" x="776.73" y="310.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>quality control</tspan></text>
+<rect x="962.97" y="245.41" width="166.24" height="84" rx="4" fill="#F68B1F"/>
+<text class="bt" x="976.97" y="270.93" font-size="16" fill="#000000"><tspan>Report</tspan></text>
+<text class="bd" x="976.97" y="296.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>study deliverable,</tspan></text>
+<text class="bd" x="976.97" y="310.05" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>ENA + BOLD deposition</tspan></text>
+<rect x="562.49" y="360.38" width="166.24" height="84" rx="4" fill="#B1B1B1"/>
+<text class="bt" x="576.49" y="376.9" font-size="16" fill="#000000"><tspan>Long-term</tspan></text>
+<text class="bt" x="576.49" y="394.9" font-size="16" fill="#000000"><tspan>storage</tspan></text>
+<text class="bd" x="576.49" y="420.02" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>voucher + surplus tissue,</tspan></text>
+<text class="bd" x="576.49" y="434.02" font-size="12" fill="#000000" fill-opacity="0.72"><tspan>the museum vault</tspan></text>
+<path d="M 328.24 57.48 L 362.24 57.48" fill="none" stroke="#006B4D" stroke-width="2.2" marker-end="url(#h-006B4D)"/>
+<path d="M 528.49 57.48 L 562.49 57.48" fill="none" stroke="#006B4D" stroke-width="2.2" marker-end="url(#h-006B4D)"/>
+<path d="M 445.36 99.48 L 445.36 392.38 Q 445.36 402.38 455.36 402.38 L 562.49 402.38" fill="none" stroke="#006B4D" stroke-width="2.2" marker-end="url(#h-006B4D)"/>
+<path d="M 445.36 287.41 L 562.49 287.41" fill="none" stroke="#006B4D" stroke-width="2.2" marker-end="url(#h-006B4D)"/>
+<path d="M 728.73 287.41 L 762.73 287.41" fill="none" stroke="#F68B1F" stroke-width="2.2" marker-end="url(#h-F68B1F)"/>
+<path d="M 928.97 287.41 L 962.97 287.41" fill="none" stroke="#F68B1F" stroke-width="2.2" marker-end="url(#h-F68B1F)"/>
+<path d="M 892.4 245.41 L 892.4 182.45 Q 892.4 172.45 902.4 172.45 L 962.97 172.45" fill="none" stroke="#F68B1F" stroke-width="2.2" marker-end="url(#h-F68B1F)"/>
+<path d="M 845.85 245.41 L 845.85 99.48" fill="none" stroke="#F68B1F" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#h-F68B1F)"/>
+<path d="M 928.97 57.48 L 1036.09 57.48 Q 1046.09 57.48 1046.09 67.48 L 1046.09 130.45" fill="none" stroke="#006B4D" stroke-width="2.2" marker-end="url(#h-006B4D)"/>
+<circle cx="445.36" cy="287.41" r="4.2" fill="#006B4D"/>
+<text class="an" x="554.49" y="277.41" font-size="12" text-anchor="end"><tspan>tissue subsample</tspan></text>
+<text class="an" x="554.49" y="378.38" font-size="12" text-anchor="end"><tspan>voucher &amp;</tspan></text>
+<text class="an" x="554.49" y="392.38" font-size="12" text-anchor="end"><tspan>surplus material</tspan></text>
+<text class="an" x="835.85" y="152.45" font-size="12" text-anchor="end"><tspan>ENA / BOLD</tspan></text>
+<text class="an" x="835.85" y="166.45" font-size="12" text-anchor="end"><tspan>accessions returned</tspan></text>
+<text class="an" x="1026.09" y="79.48" font-size="12" text-anchor="end"><tspan>occurrence &amp;</tspan></text>
+<text class="an" x="1026.09" y="93.48" font-size="12" text-anchor="end"><tspan>metadata</tspan></text>
+</svg>

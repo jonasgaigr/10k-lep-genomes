@@ -27,7 +27,7 @@ A commissioner of isolated studies, not yet a cumulative capability.
 - The result is isolated reports: samples not archived comparably, data not deposited under common identifiers, nothing repeatable.
 - Other European agencies have named this trap and escaped it.
 
-## Three Strands, Three Different Problems
+## What can we use
 
 - **Reference genomes** (ERGA, BGE+) – built by others at European scale. We contribute samples and name priority species. *Cost to us: very low.*
 - **Barcode reference libraries** (iBOL / BOLD; the German GBOL model) – partial for Central-European insects, with large gaps in dark taxa. *Low to medium.*
@@ -43,7 +43,7 @@ A commissioner of isolated studies, not yet a cumulative capability.
 - **Habitats Directive Article 17** – space for utilisation of genetic data in the 2031 reporting round through $N_e$? *No obligations for genetic data.*
 - **Czech NBSAP 2026–2050 and its Action Plan 2026–2030** – the domestic base for a research–practice interface. *Lack of dedicated genetic monitoring framework or funding.*
 
-## Best-practice national/regional approaches {.aopk-section}
+## Best-practice approaches {.aopk-section}
 
 Keeping in mind that the NCA is not a laboratory, and will not build a genetic infrastructure.
 
@@ -88,7 +88,6 @@ We contribute samples and coordination – not laboratories.
 - The NCA coordinates a network of field expert and long-running monitoring programmes feeding the Species Occurrence Database. It can **collect samples in 2027** without new money, and **archive them for later analysis**.
 - **A 2027 baseline cannot be collected in 2032.** Analysis can wait for money; the T₀ time point cannot.
 - **Whoever owns the samples writes the conditions** – deposition, identifier return and voucher archiving become enforceable through the transfer agreement.
-- The asset we offer partners: a nationally representative, protocol-consistent, precisely georeferenced sample series with clean metadata and clean permits.
 :::
 
 ::: {}
@@ -102,7 +101,6 @@ We contribute samples and coordination – not laboratories.
 ::: {}
 - **Track A – selected (regional) action-plan species.** Exhaustive sampling within known populations, during rescue-programme and Natura 2000 visits that already happen. *Are the last populations depleted or isolated? Do reinforcements make sense, and from where?*
 - **Track B – selected widespread species.** Stratified, design-based sampling on grid mapping and transects. *Is diversity in common insects tracking fragmentation and climate? What is the national baseline?*
-- Field cost in both tracks is near zero: the experts are already at these sites.
 :::
 
 ::: {}
@@ -135,6 +133,10 @@ The pilot only matters if it compiles into something reportable.
 ## Sharing the data {.aopk-section}
 
 Seek effective ways to communicate the results. Reports may be read by NCA staff, but also target policy-makers and the public. 
+
+## Who Does What, from Net to Indicator {.no-leaf}
+
+![](images/pipeline.svg){fig-alt="Four responsibility bands. The NCA samples in the field, holds the samples in short-term storage and mints the occurrence record that carries the sample identifier. Material then splits: tissue to research partners for laboratory work and bioinformatics, which produce the study report and return ENA and BOLD accessions to the occurrence record; voucher and surplus material to museums for long-term storage in the vault. The NCA and its research partners jointly compile the EBVs and dashboards from the analytical results and the occurrence records."}
 
 ## Takeaways
 
