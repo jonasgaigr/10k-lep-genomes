@@ -36,6 +36,8 @@ A commissioner of isolated studies, not yet a cumulative capability.
 
 ## The Mandate Already Exists
 
+*Though it might not be enough...*
+
 - **KMGBF Goal A / Target 4** – the $N_e$ 500 indicator is mandatory to report; Populations Maintained is encouraged. Neither requires DNA to begin. *Irrelevant to the insect populations.*
 - **EU Nature Restoration Regulation (2024/1991)** – binding pollinator monitoring, method set by Delegated Regulation 2025/2188. *Obligations do not include genetic data.*
 - **Habitats Directive Article 17** – space for utilisation of genetic data in the 2031 reporting round through $N_e$? *No obligations for genetic data.*
@@ -44,6 +46,10 @@ A commissioner of isolated studies, not yet a cumulative capability.
 ## Best-practice national/regional approaches {.aopk-section}
 
 Keeping in mind that the NCA is not a laboratory, and will not build a genetic infrastructure.
+
+## Possible paths forward {.aopk-section}
+
+Scenarios for the NCA to move from opportunistic commissioning to a systematic sampling and FAIR data management. Starting with the low-resource scenario, which is achievable without new funding.
 
 ## The low-flying butterflies {.aopk-section}
 
@@ -112,13 +118,6 @@ We contribute samples and coordination – not laboratories.
 - Training for 30–40 field experts.
 - Roughly **500–1,200 labelled samples** – the number to put in front of any prospective analysis partner.
 
-## Three-Tier Proposal
-
-- **Tier 0 – Bank only.** No external funding: full sampling, full metadata, archive only. $N_e$ 500 and PM still reported from census data.
-- **Tier 1 – Barcode.** A small in-kind or BGE+ slot: barcoding of a subset, BINs returned to Species Occurrence Database, the identifier plumbing tested end to end.
-- **Tier 2 – Population genomics.** A partner-led grant: reduced-representation sequencing, a ΔH / ΔF~ST~ baseline, genetic $N_e$ at deliberately over-sampled sites.
-- The framing to accept explicitly: **Tier 0 is still a success.**
-
 ## From samples to EBVs {.aopk-section}
   
 The pilot only matters if it compiles into something reportable.
@@ -135,29 +134,14 @@ The pilot only matters if it compiles into something reportable.
 
 ## Sharing the data {.aopk-section}
 
-One simple dashboard, built on pointers rather than a repository.
-
-## A Simple Dashboard
-
-- The failure mode is not a bad pilot; it is a good pilot whose results arrive as a PDF nobody is obliged to act on.
-- **What it holds:** the site register with fixed coordinates and resampling intervals; sample counts by species, track and stratum; the identifier chain – sample ID → BOLD BIN → ENA accession – as outbound links; the four EBVs with their time points; permit and ABS status per batch.
-- **What it does not hold:** sequences. Those stay in ENA and BOLD, where they belong.
-- **Sensitivity:** full precision retained internally, deliberately generalised coordinates in anything published, and the generalisation documented so it reads as intentional rather than sloppy.
-
-## Dashboard Users
-
-- **Field experts** see what their season produced, and what is still missing from their stratum.
-- **Action-plan coordinators** see, per population, whether a pre-agreed decision rule has been triggered.
-- **Reporting staff** export the indicator tables directly, instead of reconstructing them each cycle.
-- **Partners and the public** see a curated, sensitivity-filtered view – which doubles as the route by which Czech DNA-derived occurrence records finally reach the international layer.
+Seek effective ways to communicate the results. Reports may be read by NCA staff, but also target policy-makers and the public. 
 
 ## Takeaways
 
-- **Change the contract clause first** – mandatory deposition, standard identifiers, voucher archiving. It costs nothing and converts reports into assets.
+- **Change the contract clause first** – mandatory deposition, standard identifiers, voucher archiving.
 - **Sample in 2027 regardless of funding.** The archive is the irreplaceable part.
-- **Bind the identifiers in the field**, not afterwards – the retrofit is unaffordable.
+- **Bind the identifiers in the field**, not afterwards.
 - **Compile the genetic EBVs from what we already hold**, and let the reporting cycle force the recomputation.
-- **Publish it simply**: a dashboard that links out, masks what must be masked, and makes the next resampling obvious.
 
 ## {.aopk-closing}
 
