@@ -39,8 +39,16 @@ A commissioner of isolated studies, not yet a cumulative capability.
 
 ## Natura 2000 Butterflies
 
+::: {.aopk-cols}
+::: {}
 - Assessment of genetic conditions in **current and historical populations** of butterflies of European importance, with a proposal for future genetic management of those populations.
 - **Microsatellites (SSR)** for seven species – *Lycaena helle*, *Coenonympha hero*, *Colias myrmidone*, *Parnassius mnemosyne*, *Phengaris arion*, *P. nausithous* and *P. teleius* – with present-day parameters compared against the same populations in the past.
+:::
+
+::: {}
+![](images/catax.png)
+:::
+:::
 
 ## Opportunistic, Not Systematic
 
