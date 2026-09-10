@@ -2,11 +2,11 @@
 title: "Access to and Use of Insect Genome Information"
 author: "Jonas Gaigr"
 institute: "Nature Conservation Agency of the Czech Republic<br>Department of Biodiversity Monitoring"
-date: 2026-09-08
+date: 2026-09-10
 date-format: "DDDD MMMM YYYY"
 lang: en
 title-footer: "Nature Conservation Agency of the Czech Republic&ensp;|&ensp;aopk.gov.cz"
-footer-left: "Access to and Use of Insect Genome Information | 8 September 2026"
+footer-left: "Access to and Use of Insect Genome Information | 10 September 2026"
 footer-right: "NCA CZ | aopk.gov.cz"
 format:
   aopk-revealjs:
@@ -20,6 +20,35 @@ format:
 ## Where we stand {.aopk-section}
 
 A commissioner of isolated studies, not yet a cumulative capability.
+
+## Case: Euphydryas maturna {.smaller}
+
+::: {.aopk-cols}
+::: {}
+- Habitats Directive Annexe II (Natura 2000 sites established), Species Action Plan in place
+- The **scarce fritillary**: a microsatellite study (2023) combining **historical and recent samples**.
+- **Trend:** variability in the Dománovice / Elbe-lowland population has **declined**, and the population is markedly distinct from those in neighbouring countries.
+- **Origin:** the population near Frýdek-Místek is **not autochthonous** – the data point to southern Slovakia.
+- Decision-grade evidence: the result feeds directly into **genetic management** choices.
+:::
+
+::: {}
+![](images/maturna.png)
+:::
+:::
+
+## Natura 2000 Butterflies
+
+::: {.aopk-cols}
+::: {}
+- Assessment of genetic conditions in **current and historical populations** of butterflies of European importance, with a proposal for future genetic management of those populations.
+- **Microsatellites (SSR)** for seven species – *Lycaena helle*, *Coenonympha hero*, *Colias myrmidone*, *Parnassius mnemosyne*, *Phengaris arion*, *P. nausithous* and *P. teleius* – with present-day parameters compared against the same populations in the past.
+:::
+
+::: {}
+![](images/catax.png)
+:::
+:::
 
 ## Opportunistic, Not Systematic
 
