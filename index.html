@@ -1,737 +1,311 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/tabby.min.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-292b26ec1a900c1b0c05cc14009815ac.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insect Genomics &amp; Genetic Monitoring — AOPK ČR</title>
+<meta name="description" content="Two presentations by the Nature Conservation Agency of the Czech Republic on genetic monitoring and access to insect genome information.">
+<link rel="icon" href="_extensions/aopk/assets/symbol-green.svg" type="image/svg+xml">
+<style>
+/* ---------------------------------------------------------------------------
+   Landing page — AOPK ČR visual style.
+   Colours and typeface follow "Grafický manuál AOPK ČR 2026 — Hlavní část"
+   (p. 10 colours, p. 11 typeface); the same values the reveal.js theme in
+   _extensions/aopk/ uses. Kept as plain HTML/CSS on purpose: it is not a
+   deck, so `quarto render` never touches it.
+--------------------------------------------------------------------------- */
 
-  <meta name="author" content="Jonas Gaigr">
-  <title>Genetic Monitoring in Czech Insect Conservation</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
-  <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-      vertical-align: middle;
-    }
-  </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-745d97ec6d29faff29eb21a97b948aee.css">
-  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
-    .reveal div.sourceCode {
-      margin: 0;
-      overflow: auto;
-    }
-    .reveal div.hanging-indent {
-      margin-left: 1em;
-      text-indent: -1em;
-    }
-    .reveal .slide:not(.center) {
-      height: 100%;
-    }
-    .reveal .slide.scrollable {
-      overflow-y: auto;
-    }
-    .reveal .footnotes {
-      height: 100%;
-      overflow-y: auto;
-    }
-    .reveal .slide .absolute {
-      position: absolute;
-      display: block;
-    }
-    .reveal .footnotes ol {
-      counter-reset: ol;
-      list-style-type: none; 
-      margin-left: 0;
-    }
-    .reveal .footnotes ol li:before {
-      counter-increment: ol;
-      content: counter(ol) ". "; 
-    }
-    .reveal .footnotes ol li > p:first-child {
-      display: inline-block;
-    }
-    .reveal .slide ul,
-    .reveal .slide ol {
-      margin-bottom: 0.5em;
-    }
-    .reveal .slide ul li,
-    .reveal .slide ol li {
-      margin-top: 0.4em;
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide ul[role="tablist"] li {
-      margin-bottom: 0;
-    }
-    .reveal .slide ul li > *:first-child,
-    .reveal .slide ol li > *:first-child {
-      margin-block-start: 0;
-    }
-    .reveal .slide ul li > *:last-child,
-    .reveal .slide ol li > *:last-child {
-      margin-block-end: 0;
-    }
-    .reveal .slide .columns:nth-child(3) {
-      margin-block-start: 0.8em;
-    }
-    .reveal blockquote {
-      box-shadow: none;
-    }
-    .reveal .tippy-content>* {
-      margin-top: 0.2em;
-      margin-bottom: 0.7em;
-    }
-    .reveal .tippy-content>*:last-child {
-      margin-bottom: 0.2em;
-    }
-    .reveal .slide > img.stretch.quarto-figure-center,
-    .reveal .slide > img.r-stretch.quarto-figure-center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-left,
-    .reveal .slide > img.r-stretch.quarto-figure-left  {
-      display: block;
-      margin-left: 0;
-      margin-right: auto; 
-    }
-    .reveal .slide > img.stretch.quarto-figure-right,
-    .reveal .slide > img.r-stretch.quarto-figure-right  {
-      display: block;
-      margin-left: auto;
-      margin-right: 0; 
-    }
-  </style>
+/* Franklin Gothic ships on Windows as four separate families; alias them into
+   one family with real weights, falling through to Arial (manual p. 11). */
+@font-face { font-family: "AOPK Franklin Gothic"; font-weight: 400; font-style: normal;
+  src: local("Franklin Gothic Book"), local("FranklinGothic-Book"), local("ITC Franklin Gothic Std Book"); }
+@font-face { font-family: "AOPK Franklin Gothic"; font-weight: 500; font-style: normal;
+  src: local("Franklin Gothic Medium"), local("FranklinGothic-Medium"), local("ITC Franklin Gothic Std Medium"); }
+@font-face { font-family: "AOPK Franklin Gothic"; font-weight: 600; font-style: normal;
+  src: local("Franklin Gothic Demi"), local("FranklinGothic-Demi"), local("ITC Franklin Gothic Std Demi"); }
+@font-face { font-family: "AOPK Franklin Gothic"; font-weight: 800; font-style: normal;
+  src: local("Franklin Gothic Heavy"), local("FranklinGothic-Heavy"), local("ITC Franklin Gothic Std Heavy"); }
+
+:root {
+  --aopk-green-dark:  #006B4D;
+  --aopk-green-light: #8CC83C;
+  --aopk-yellow:      #FFCD00;
+  --aopk-orange:      #F68B1F;
+  --aopk-gray:        #B1B1B1;
+  --aopk-font: "AOPK Franklin Gothic", "Franklin Gothic Book", "Franklin Gothic Medium",
+               "Libre Franklin", Arial, "Arial CE", Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  font-family: var(--aopk-font);
+  font-weight: 400;
+  font-size: clamp(15px, 1.15vw, 18px);
+  line-height: 1.45;
+}
+
+/* --- Header ------------------------------------------------------------- */
+
+header {
+  padding: clamp(2rem, 6vh, 4rem) clamp(1.5rem, 6vw, 6rem) 0;
+}
+
+.logo { display: block; width: clamp(140px, 15vw, 200px); height: auto; }
+
+h1 {
+  margin: clamp(2rem, 6vh, 3.5rem) 0 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  line-height: 1.05;
+  font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+  color: var(--aopk-green-dark);
+  max-width: 20em;
+}
+
+.standfirst {
+  margin: 1.25rem 0 0;
+  max-width: 46em;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+.meta {
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+  color: var(--aopk-green-light);
+}
+
+/* --- Main --------------------------------------------------------------- */
+
+main {
+  flex: 1 0 auto;
+  padding: clamp(2rem, 5vh, 3.5rem) clamp(1.5rem, 6vw, 6rem) clamp(3rem, 8vh, 5rem);
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.9rem;
+  color: var(--aopk-green-dark);
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  margin-top: 0.5rem;
+  border-top: 3px solid var(--aopk-green-light);
+}
+
+.decks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+  margin: 0 0 clamp(2.5rem, 7vh, 4rem);
+  padding: 0;
+  list-style: none;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  border: 1px solid var(--aopk-gray);
+  border-top: 6px solid var(--aopk-green-dark);
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.deck:hover, .deck:focus-visible {
+  background: #f4f8f2;
+  border-color: var(--aopk-green-dark);
+  border-top-color: var(--aopk-green-light);
+  transform: translateY(-2px);
+}
+
+.deck-kicker {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  color: var(--aopk-green-light);
+}
+
+.deck-title {
+  margin: 0.6rem 0 0;
+  font-weight: 800;
+  line-height: 1.15;
+  font-size: clamp(1.25rem, 2.1vw, 1.7rem);
+  color: var(--aopk-green-dark);
+}
+
+.deck-desc { margin: 0.9rem 0 1.5rem; }
+
+.deck-go {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--aopk-green-dark);
+}
+
+.deck-go::after { content: " →"; }
+
+/* --- External links ----------------------------------------------------- */
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  border-left: 4px solid var(--aopk-orange);
+  background: #f5f5f5;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .15s ease;
+}
+
+.link:hover, .link:focus-visible { background: #ebebeb; }
+
+.link-name {
+  display: block;
+  font-weight: 600;
+  color: var(--aopk-green-dark);
+}
+
+.link-url {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #555;
+  word-break: break-word;
+}
+
+a:focus-visible { outline: 3px solid var(--aopk-yellow); outline-offset: 2px; }
+
+/* --- Footer bar (manual p. 18) ------------------------------------------ */
+
+footer {
+  flex: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  align-items: center;
+  padding: 1rem clamp(1.5rem, 6vw, 6rem);
+  background: var(--aopk-green-dark);
+  color: var(--aopk-green-light);
+  font-size: 0.85rem;
+}
+
+footer a { color: #fff; text-decoration: none; font-weight: 600; }
+footer a:hover { text-decoration: underline; }
+footer .right { margin-left: auto; font-weight: 600; }
+
+.dvojlist {
+  position: absolute;
+  right: clamp(1.5rem, 6vw, 6rem);
+  bottom: 100%;
+  width: clamp(90px, 9vw, 130px);
+  height: auto;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .dvojlist { display: none; }
+  footer .right { margin-left: 0; }
+}
+</style>
 </head>
-<body class="quarto-light">
-  <div class="reveal">
-    <div class="slides">
+<body>
 
-<!--
-  AOPK ČR title slide  (Grafický manuál AOPK ČR 2026 — Hlavní část, p. 18)
+<header>
+  <img class="logo" src="_extensions/aopk/assets/logo-en-green.svg"
+       alt="Nature Conservation Agency of the Czech Republic">
 
-  The manual's mockup stacks three centred blocks on a white ground:
-      NÁZEV PREZENTACE        dark green, heavy, capitals   cap top 29.06 %
-      AUTOR                   světle zelená, demi, capitals cap top 57.02 %
-      Sekce, odbor AOPK ČR    dark green, book              cap top 69.37 %
-  plus a centred dvojlist and a bar reading
-      "Agentura ochrany přírody a krajiny ČR | aopk.gov.cz"
+  <h1>Insect Genomics &amp; Genetic Monitoring</h1>
 
-  Mapping from document metadata:
-      title      -> the presentation name
-      author     -> AUTOR   (set `author-uppercase: false` to keep normal case)
-      institute  -> the section / department line; `subtitle` is used if
-                    `institute` is absent.
-      title-footer -> overrides the text in the bar.
--->
-<section class="aopk-title-slide center quarto-title-block">
+  <p class="standfirst">
+    Two presentations from the Department of Biodiversity Monitoring on where Czech
+    nature conservation stands on genetic data — what the Agency does today, what
+    the international mandate requires, and how genome information can be reached
+    and used.
+  </p>
+  <p class="meta">Nature Conservation Agency of the Czech Republic · 8 September 2026</p>
+</header>
 
-  <h1 class="aopk-title">Genetic Monitoring in Czech Insect Conservation</h1>
+<main>
+  <h2>Presentations</h2>
+  <ul class="decks">
+    <li>
+      <a class="deck" href="genetic-monitoring.html">
+        <span class="deck-kicker">Presentation 1</span>
+        <h3 class="deck-title">Genetic Monitoring in Czech Insect Conservation</h3>
+        <p class="deck-desc">
+          From one-off genetic studies to a standing national system: the current
+          state of the Agency's work, the strategic mandate behind it, and what a
+          long-term monitoring programme would take.
+        </p>
+        <span class="deck-go">Open the slides</span>
+      </a>
+    </li>
+    <li>
+      <a class="deck" href="genome-information.html">
+        <span class="deck-kicker">Presentation 2</span>
+        <h3 class="deck-title">Access to and Use of Insect Genome Information</h3>
+        <p class="deck-desc">
+          Reference genomes, barcode reference libraries, population-genetic
+          indicators and eDNA — four strands with very different costs, and how the
+          Agency can move from consuming isolated reports to a cumulative capability.
+        </p>
+        <span class="deck-go">Open the slides</span>
+      </a>
+    </li>
+  </ul>
 
-  <p class="aopk-author">Jonas Gaigr</p>
+  <h2>Related</h2>
+  <ul class="links">
+    <li>
+      <a class="link" href="https://10klepgenomes.eu/" target="_blank" rel="noopener">
+        <span class="link-name">10,000 Lepidoptera Genomes</span>
+        <span class="link-url">10klepgenomes.eu</span>
+      </a>
+    </li>
+    <li>
+      <a class="link" href="https://aopk.gov.cz/web/en" target="_blank" rel="noopener">
+        <span class="link-name">Nature Conservation Agency of the Czech Republic</span>
+        <span class="link-url">aopk.gov.cz/web/en</span>
+      </a>
+    </li>
+  </ul>
+</main>
 
-  <p class="aopk-institute">Nature Conservation Agency of the Czech Republic<br>Department of Biodiversity Monitoring</p>
+<footer>
+  <img class="dvojlist" src="_extensions/aopk/assets/dvojlist.svg" alt="">
+  <span>Nature Conservation Agency of the Czech Republic&ensp;|&ensp;Department of Biodiversity Monitoring</span>
+  <span class="right"><a href="https://aopk.gov.cz/web/en" target="_blank" rel="noopener">aopk.gov.cz</a></span>
+</footer>
 
-  <div class="aopk-bar">Nature Conservation Agency of the Czech Republic | aopk.gov.cz</div>
-</section>
-<section class="slide level2 aopk-section">
-<h2>Where we stand</h2>
-<p>One-off studies today; a strategic mandate for a standing system.</p>
-<div class="aopk-bar aopk-bar-empty"></div>
-</section>
-<section class="slide level2">
-<h2>Current State: What the NCA Does</h2>
-<div class="aopk-cols">
-<div>
-<ul>
-<li>The NCA currently lacks a standardised, long-term national monitoring system for genetic diversity.</li>
-<li>It focuses primarily on <strong>one-off genetic studies</strong> for selected groups of species.</li>
-<li>Data collection is project-specific and often linked to active species conservation and applied research.</li>
-<li>Genetic characterisation answers immediate management questions rather than building a continuous time series.</li>
-</ul>
-</div>
-<div>
-<p><img data-src="images/catax_report.png"></p>
-</div>
-</div>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 smaller">
-<h2>The Strategic Mandate</h2>
-<ul>
-<li><strong>Kunming-Montreal Framework (CBD, 2022):</strong> Goal A requires genetic diversity to be maintained so populations retain their adaptive potential; Target 4 requires it to be maintained and restored within and between populations of native wild species.</li>
-<li><strong>The Objective:</strong> Translate this strategic need into a unified, long-term monitoring system.</li>
-<li><strong>Targeted Approach (IUCN, 2022):</strong> Not all species require monitoring. The focus should be on systematic selection by conservation relevance, feasibility of sampling, and the ability to influence decision-making.</li>
-<li>Transition from ad-hoc projects to methodologically comparable, repeated monitoring over time.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 aopk-section">
-<h2>Cases: Czech butterflies</h2>
-<p>What genetic data have already told us, and what they changed.</p>
-<div class="aopk-bar aopk-bar-empty"></div>
-</section>
-<section class="slide level2 smaller">
-<h2>Case: Euphydryas maturna</h2>
-<div class="aopk-cols">
-<div>
-<ul>
-<li>The <strong>scarce fritillary</strong>: a microsatellite study (2023) combining <strong>historical and recent samples</strong>.</li>
-<li><strong>Trend:</strong> variability in the Dománovice / Elbe-lowland population has <strong>declined</strong>, and the population is markedly distinct from those in neighbouring countries.</li>
-<li><strong>Origin:</strong> the population near Frýdek-Místek is <strong>not autochthonous</strong> – the data point to southern Slovakia.</li>
-<li>Decision-grade evidence: the result feeds directly into <strong>genetic management</strong> choices.</li>
-</ul>
-</div>
-<div>
-<p><img data-src="images/maturna.png"></p>
-</div>
-</div>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2">
-<h2>Natura 2000 Butterflies</h2>
-<ul>
-<li>Assessment of genetic conditions in <strong>current and historical populations</strong> of butterflies of European importance, with a proposal for future genetic management of those populations.</li>
-<li><strong>Microsatellites (SSR)</strong> for seven species – <em>Lycaena helle</em>, <em>Coenonympha hero</em>, <em>Colias myrmidone</em>, <em>Parnassius mnemosyne</em>, <em>Phengaris arion</em>, <em>P. nausithous</em> and <em>P. teleius</em> – with present-day parameters compared against the same populations in the past.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 smaller">
-<h2>From Markers to Genomes</h2>
-<div class="aopk-cols">
-<div>
-<ul>
-<li><strong>RADseq</strong> to assess the standing and condition of current populations of <em>Eriogaster catax</em> and <em>Euplagia quadripunctaria</em>.</li>
-<li><strong>Ongoing, 2024–2026:</strong> <em>Genomics for insect conservation in the CR: butterflies as a model group</em>, a TA ČR project with the NCA as application guarantor.</li>
-<li>The step from single-species studies to testing genomic approaches across practical invertebrate conservation.</li>
-</ul>
-</div>
-<div>
-<p><img data-src="images/catax.png"></p>
-</div>
-</div>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 smaller">
-<h2>Precedents from Abroad</h2>
-<ul>
-<li><strong>Switzerland, genomic pilot:</strong> five species including the fritillary <em>Melitaea diamina</em>; over <strong>1,200 individuals from 158 populations</strong> by proportional stratified random sampling, with reference genomes and whole-genome resequencing.</li>
-<li>Historical collection samples for two of the five species allowed change to be assessed <strong>retrospectively</strong> – museum material as a baseline.</li>
-<li><strong>BGEMS, a common species as sentinel:</strong> <strong>1,024</strong> meadow browns (<em>Maniola jurtina</em>) from <strong>15 sites</strong> in southern England, <strong>2012–2019</strong>, a true annual series at three of them, extended across <strong>ten countries</strong> through existing butterfly monitoring schemes.</li>
-<li>Both convert whole-genome data into indicators an agency can act on: diversity, connectivity, inbreeding and <span class="math inline">\(N_e\)</span>.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 aopk-section">
-<h2>What monitoring could deliver</h2>
-<p>Where to pilot it, and what it should be asked to answer.</p>
-<div class="aopk-bar aopk-bar-empty"></div>
-</section>
-<section class="slide level2">
-<h2>Options for Pilots: Species Action Plans</h2>
-<ul>
-<li><strong>Species Action Plans (SAPs) and Regional Species Action Plans (RSAPs)</strong> offer ideal pilot frameworks.</li>
-<li>Focus on populations undergoing reintroductions, reinforcements, or other active manipulations.</li>
-<li><strong>Core Principle:</strong> The genetic relevance of every SAP and RSAP should be explicitly assessed.</li>
-<li>Genetic data must serve as a <strong>long-term indicator of success</strong>, evaluated alongside demographic trends and habitat conditions.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2">
-<h2>Potential Objectives of the NCA</h2>
-<ul>
-<li><strong>Indicator of Success:</strong> Utilising genetics to evaluate the efficacy of SAPs and RSAPs.</li>
-<li><strong>Standardisation &amp; Biobanking:</strong> Implementing minimum standards for metadata and the long-term preservation of biological material.</li>
-<li><strong>Risk Screening:</strong> Using demographic and spatial proxies to identify populations at genetic risk.</li>
-<li><strong>Genetic Baselines:</strong> Establishing reference genetic states for priority species.</li>
-<li><strong>Repeated Monitoring:</strong> Tracking changes in effective population size (<span class="math inline">\(N_e\)</span>), inbreeding, and connectivity over time.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 aopk-section">
-<h2>How to deliver it</h2>
-<p>The capacity already exists – and a minimum scheme to put it to work.</p>
-<div class="aopk-bar aopk-bar-empty"></div>
-</section>
-<section class="slide level2">
-<h2>NCA Capacities: A Nationwide Sampling Network</h2>
-<div class="aopk-cols">
-<div>
-<ul>
-<li>The NCA possesses a <strong>unique nationwide field network</strong> and deep knowledge of local habitats.</li>
-<li>Existing long-term field monitoring infrastructure can be leveraged for low-cost, standardised sample collection (highly effective for invertebrates).</li>
-</ul>
-</div>
-<div>
-<p><img data-src="images/CR_VZCHU_AJ_2025.svg"></p>
-</div>
-</div>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2">
-<h2>Biobanking and the Division of Labour</h2>
-<div class="aopk-cols">
-<div>
-<ul>
-<li><strong>NCA Role:</strong> Prioritisation, sampling coordination, metadata standardisation, biobanking, and management application.</li>
-<li><strong>External Partners (Universities/CAS):</strong> Laboratory processing, bioinformatics, and methodological design.</li>
-</ul>
-</div>
-<div>
-<p><img data-src="images/storage%20capacity.jpg"></p>
-</div>
-</div>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2">
-<h2>Recommended Minimum Scheme</h2>
-<ul>
-<li><strong>Explicitly assess genetic relevance</strong> for all SAPs and RSAPs.</li>
-<li><strong>Standardise sampling, metadata, and long-term archiving</strong> (biobanking), even if sequencing occurs at a later date.</li>
-<li><strong>Utilise existing field monitoring networks</strong> for repeated biological sampling.</li>
-<li><strong>Combine approaches:</strong> Use a narrow portfolio of genomically monitored species alongside a broader proxy-based screening of genetic risk.</li>
-<li><strong>Pre-define protocols:</strong> Establish indicators, repetition intervals, and specific decision-making responses in advance.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2">
-<h2>Takeaways</h2>
-<ul>
-<li>Make genetic relevance an <strong>explicit step</strong> in every SAP and RSAP, not an optional extra.</li>
-<li><strong>Standardise and archive now</strong>; sequencing can follow later.</li>
-<li><strong>Sample through the network that already exists</strong> – the field monitoring infrastructure is the cheapest route to standardised material.</li>
-<li><strong>Pair depth with breadth:</strong> genomic monitoring of a few species, proxy screening of many.</li>
-<li><strong>Decide the response before the data arrive</strong> – indicators, intervals and consequences, agreed in advance.</li>
-</ul>
-<div class="aopk-bar"><span class="aopk-bar-left">Genetic Monitoring in Czech Insect Conservation | 8 September 2026</span><span class="aopk-bar-right">AOPK ČR | aopk.gov.cz</span></div>
-</section>
-<section class="slide level2 aopk-closing">
-<h2></h2>
-<div class="aopk-mission">
-<p><strong>THANK YOU FOR YOUR ATTENTION!</strong></p>
-</div>
-<div class="aopk-lockup">
-<p><img data-src="_extensions/aopk/assets/logo-slogan-2r-en-green.svg"></p>
-</div>
-<div class="aopk-web">
-<p>aopk.gov.cz</p>
-</div>
-
-<div class="aopk-bar aopk-bar-empty"></div>
-</section>
-    </div>
-  <div class="quarto-auto-generated-content" style="display: none;">
-<div class="footer footer-default">
-
-</div>
-</div></div>
-
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
-
-      // Full list of configuration options available at:
-      // https://revealjs.com/config/
-      Reveal.initialize({
-'controlsAuto': true,
-'previewLinksAuto': true,
-'pdfSeparateFragments': false,
-'autoAnimateEasing': "ease",
-'autoAnimateDuration': 1,
-'autoAnimateUnmatched': true,
-'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
- 
-        // Display controls in the bottom right corner
-        controls: false,
-
-        // Help the user learn the controls by providing hints, for example by
-        // bouncing the down arrow when they first encounter a vertical slide
-        controlsTutorial: false,
-
-        // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'edges',
-
-        // Visibility rule for backwards navigation arrows; "faded", "hidden"
-        // or "visible"
-        controlsBackArrows: 'faded',
-
-        // Display a presentation progress bar
-        progress: true,
-
-        // Display the page number of the current slide
-        slideNumber: false,
-
-        // 'all', 'print', or 'speaker'
-        showSlideNumber: 'all',
-
-        // Add the current slide number to the URL hash so that reloading the
-        // page/copying the URL will return you to the same slide
-        hash: true,
-
-        // Start with 1 for the hash rather than 0
-        hashOneBasedIndex: false,
-
-        // Flags if we should monitor the hash and change slides accordingly
-        respondToHashChanges: true,
-
-        // Push each slide change to the browser history
-        history: true,
-
-        // Enable keyboard shortcuts for navigation
-        keyboard: true,
-
-        // Enable the slide overview mode
-        overview: true,
-
-        // Disables the default reveal.js slide layout (scaling and centering)
-        // so that you can use custom CSS layout
-        disableLayout: false,
-
-        // Vertical centering of slides
-        center: false,
-
-        // Enables touch navigation on devices with touch input
-        touch: true,
-
-        // Loop the presentation
-        loop: false,
-
-        // Change the presentation direction to be RTL
-        rtl: false,
-
-        // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
-
-        // Randomizes the order of slides each time the presentation loads
-        shuffle: false,
-
-        // Turns fragments on and off globally
-        fragments: true,
-
-        // Flags whether to include the current fragment in the URL,
-        // so that reloading brings you to the same fragment position
-        fragmentInURL: false,
-
-        // Flags if the presentation is running in an embedded mode,
-        // i.e. contained within a limited portion of the screen
-        embedded: false,
-
-        // Flags if we should show a help overlay when the questionmark
-        // key is pressed
-        help: true,
-
-        // Flags if it should be possible to pause the presentation (blackout)
-        pause: true,
-
-        // Flags if speaker notes should be visible to all viewers
-        showNotes: false,
-
-        // Global override for autoplaying embedded media (null/true/false)
-        autoPlayMedia: null,
-
-        // Global override for preloading lazy-loaded iframes (null/true/false)
-        preloadIframes: null,
-
-        // Number of milliseconds between automatically proceeding to the
-        // next slide, disabled when set to 0, this value can be overwritten
-        // by using a data-autoslide attribute on your slides
-        autoSlide: 0,
-
-        // Stop auto-sliding after user input
-        autoSlideStoppable: true,
-
-        // Use this method for navigation when auto-sliding
-        autoSlideMethod: null,
-
-        // Specify the average time in seconds that you think you will spend
-        // presenting each slide. This is used to show a pacing timer in the
-        // speaker view
-        defaultTiming: null,
-
-        // Enable slide navigation via mouse wheel
-        mouseWheel: false,
-
-        // The display mode that will be used to show slides
-        display: 'block',
-
-        // Hide cursor if inactive
-        hideInactiveCursor: true,
-
-        // Time before the cursor is hidden (in ms)
-        hideCursorTime: 5000,
-
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-
-        // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
-
-        // Transition speed (default/fast/slow)
-        transitionSpeed: 'default',
-
-        // Transition style for full page slide backgrounds
-        // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
-
-        // Number of slides away from the current that are visible
-        viewDistance: 3,
-
-        // Number of slides away from the current that are visible on mobile
-        // devices. It is advisable to set this to a lower number than
-        // viewDistance in order to save resources.
-        mobileViewDistance: 2,
-
-        // The "normal" size of the presentation, aspect ratio will be preserved
-        // when the presentation is scaled to fit different resolutions. Can be
-        // specified using percentage units.
-        width: 1280,
-
-        height: 720,
-
-        // Factor of the display size that should remain empty around the content
-        margin: 0,
-
-        // Bounds for smallest/largest possible scale to apply to content
-        minScale: 0.2,
-
-        maxScale: 2,
-
-        math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
-          config: 'TeX-AMS_HTML-full',
-          tex2jax: {
-            inlineMath: [['\\(','\\)']],
-            displayMath: [['\\[','\\]']],
-            balanceBraces: true,
-            processEscapes: false,
-            processRefs: true,
-            processEnvironments: true,
-            preview: 'TeX',
-            skipTags: ['script','noscript','style','textarea','pre','code'],
-            ignoreClass: 'tex2jax_ignore',
-            processClass: 'tex2jax_process'
-          },
-        },
-
-        // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
-
-          RevealMath,
-          RevealNotes,
-          RevealSearch,
-          RevealZoom
-        ]
-      });
-    </script>
-    <script id="quarto-html-after-body" type="application/javascript">
-      window.document.addEventListener("DOMContentLoaded", function (event) {
-        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-        tabsets.forEach(function(tabset) {
-          const tabby = new Tabby('#' + tabset.id);
-        });
-        const isCodeAnnotation = (el) => {
-          for (const clz of el.classList) {
-            if (clz.startsWith('code-annotation-')) {                     
-              return true;
-            }
-          }
-          return false;
-        }
-        const onCopySuccess = function(e) {
-          // button target
-          const button = e.trigger;
-          // don't keep focus
-          button.blur();
-          // flash "checked"
-          button.classList.add('code-copy-button-checked');
-          var currentTitle = button.getAttribute("title");
-          button.setAttribute("title", "Copied!");
-          let tooltip;
-          if (window.bootstrap) {
-            button.setAttribute("data-bs-toggle", "tooltip");
-            button.setAttribute("data-bs-placement", "left");
-            button.setAttribute("data-bs-title", "Copied!");
-            tooltip = new bootstrap.Tooltip(button, 
-              { trigger: "manual", 
-                customClass: "code-copy-button-tooltip",
-                offset: [0, -8]});
-            tooltip.show();    
-          }
-          setTimeout(function() {
-            if (tooltip) {
-              tooltip.hide();
-              button.removeAttribute("data-bs-title");
-              button.removeAttribute("data-bs-toggle");
-              button.removeAttribute("data-bs-placement");
-            }
-            button.setAttribute("title", currentTitle);
-            button.classList.remove('code-copy-button-checked');
-          }, 1000);
-          // clear code selection
-          e.clearSelection();
-        }
-        const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-          text: getTextToCopy
-        });
-        clipboard.on('success', onCopySuccess);
-        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-            text: getTextToCopy,
-            container: window.document.getElementById('quarto-embedded-source-code-modal')
-          });
-          clipboardModal.on('success', onCopySuccess);
-        }
-          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-          var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
-          var isInternal = (href) => {
-              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-          }
-          // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-          for (var i=0; i<links.length; i++) {
-            const link = links[i];
-            if (!isInternal(link.href)) {
-              // undo the damage that might have been done by quarto-nav.js in the case of
-              // links that we want to consider external
-              if (link.dataset.originalHref !== undefined) {
-                link.href = link.dataset.originalHref;
-              }
-            }
-          }
-        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-          const config = {
-            allowHTML: true,
-            maxWidth: 500,
-            delay: 100,
-            arrow: false,
-            appendTo: function(el) {
-                return el.closest('section.slide') || el.parentElement;
-            },
-            interactive: true,
-            interactiveBorder: 10,
-            theme: 'light-border',
-            placement: 'bottom-start',
-          };
-          if (contentFn) {
-            config.content = contentFn;
-          }
-          if (onTriggerFn) {
-            config.onTrigger = onTriggerFn;
-          }
-          if (onUntriggerFn) {
-            config.onUntrigger = onUntriggerFn;
-          }
-            config['offset'] = [0,0];
-            config['maxWidth'] = 700;
-          window.tippy(el, config); 
-        }
-        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-        for (var i=0; i<noterefs.length; i++) {
-          const ref = noterefs[i];
-          tippyHover(ref, function() {
-            // use id or data attribute instead here
-            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-            try { href = new URL(href).hash; } catch {}
-            const id = href.replace(/^#\/?/, "");
-            const note = window.document.getElementById(id);
-            if (note) {
-              return note.innerHTML;
-            } else {
-              return "";
-            }
-          });
-        }
-        const findCites = (el) => {
-          const parentEl = el.parentElement;
-          if (parentEl) {
-            const cites = parentEl.dataset.cites;
-            if (cites) {
-              return {
-                el,
-                cites: cites.split(' ')
-              };
-            } else {
-              return findCites(el.parentElement)
-            }
-          } else {
-            return undefined;
-          }
-        };
-        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-        for (var i=0; i<bibliorefs.length; i++) {
-          const ref = bibliorefs[i];
-          const citeInfo = findCites(ref);
-          if (citeInfo) {
-            tippyHover(citeInfo.el, function() {
-              var popup = window.document.createElement('div');
-              citeInfo.cites.forEach(function(cite) {
-                var citeDiv = window.document.createElement('div');
-                citeDiv.classList.add('hanging-indent');
-                citeDiv.classList.add('csl-entry');
-                var biblioDiv = window.document.getElementById('ref-' + cite);
-                if (biblioDiv) {
-                  citeDiv.innerHTML = biblioDiv.innerHTML;
-                }
-                popup.appendChild(citeDiv);
-              });
-              return popup.innerHTML;
-            });
-          }
-        }
-      });
-      </script>
-    
-
-</body></html>
+</body>
+</html>
